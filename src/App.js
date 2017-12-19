@@ -30,7 +30,9 @@ class App extends Component {
 
     const drumPads = ['Q', 'W', 'E', 'A', 'S', 'D', 'Z', 'X', 'C' ].map( (item, i) => {
 
-      return <button id={ids[i]} className="drum-pad" key={i}>{item}</button>
+      return <button id={ids[i]} className="drum-pad" key={i}>{item}
+        <audio id={item} className="clip" src={mp3Sources[i]}></audio>
+      </button>
 
     });
 

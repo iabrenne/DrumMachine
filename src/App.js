@@ -3,10 +3,20 @@ import './App.css';
 
 class App extends Component {
 
+  constructor(props){
+
+    super(props);
+    this.state = { soundEffect : ""};
+
+
+  }
+
 
   handleClick = (e) => {
 
+    this.setState({soundEffect: e.target.id});
     e.target.children[0].play();
+    
 
   };
 
@@ -52,7 +62,7 @@ class App extends Component {
 
       <div id="drum-machine" className="App">
 
-        <div id="display"></div>
+        <div id="display">{this.state.soundEffect}</div>
 
         {drumPads}
 

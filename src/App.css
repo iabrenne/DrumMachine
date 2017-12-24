@@ -13,7 +13,8 @@
   height: 99vh;
   max-height: 300px; }
   #drum-machine .drum-pad {
-    background-color: grey; }
+    background-color: #b1cbbb;
+    box-shadow: 4px 3px 9px 0px; }
   #drum-machine #Bell {
     grid-area: button1; }
   #drum-machine #Sneeze {

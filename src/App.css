@@ -1,4 +1,37 @@
 #drum-machine {
-  background-color: #f4e1d2; }
+  background-color: #eea29a;
+  width: 98vw;
+  display: grid;
+  grid-template-areas: 'button1 button2 button3 display display display' 'button4 button5 button6 button7 button8 button9';
+  max-width: 800px;
+  margin: auto;
+  height: 99vh;
+  max-height: 300px; }
   #drum-machine .drum-pad {
     background-color: grey; }
+  #drum-machine #Bell {
+    grid-area: button1; }
+  #drum-machine #Censor {
+    grid-area: button2; }
+  #drum-machine #Chime {
+    grid-area: button3; }
+  #drum-machine #Harp {
+    grid-area: button4; }
+  #drum-machine #Horn {
+    grid-area: button5; }
+  #drum-machine #Fart {
+    grid-area: button6; }
+  #drum-machine #Clonk {
+    grid-area: button7; }
+  #drum-machine #Smack {
+    grid-area: button8; }
+  #drum-machine #Slide {
+    grid-area: button9; }
+  #drum-machine #display {
+    grid-area: display;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%); }

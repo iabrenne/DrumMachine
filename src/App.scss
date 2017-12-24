@@ -1,5 +1,8 @@
 $primary-color:   #eea29a;
 $accent-color : #b1cbbb;
+$main-padding-horzontal: 10px;
+$main-padding-vertical: 20px;
+
 
 
 #drum-machine{
@@ -9,22 +12,25 @@ $accent-color : #b1cbbb;
     grid-template-areas:
         'button1 button2 button3 display display display'
         'button4 button5 button6 button7 button8 button9';
+    grid-gap:20px;
+    padding-left:$main-padding-horzontal;
+    padding-right:$main-padding-horzontal;
+    padding-top:$main-padding-vertical;
+    padding-bottom:$main-padding-vertical;
     max-width: 800px;
     margin:auto;
     height:99vh;
     max-height:300px;
 
-
     .drum-pad{
-        background-color: grey;
-    
-    }
+        background-color: grey;        
+}
 
     #Bell{
         grid-area:button1;
     }
 
-    #Censor{
+    #Sneeze{
         grid-area:button2;
     }
 

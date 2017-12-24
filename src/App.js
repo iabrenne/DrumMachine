@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     const mp3Sources = [
       "https://www.soundjay.com/misc/sounds/bell-ringing-01.mp3",
-      "https://www.soundjay.com/misc/sounds/censor-beep-4.mp3",
+      "https://www.soundjay.com/human/sounds/sneezing-1.mp3",
       "https://www.soundjay.com/misc/sounds/magic-chime-01.mp3",
       "https://www.soundjay.com/misc/sounds/dream-harp-01.mp3",
       "https://www.soundjay.com/misc/sounds/bulb-horn-02.mp3",
@@ -36,7 +36,7 @@ class App extends Component {
 
     const ids = [
       "Bell",
-      "Censor",
+      "Sneeze",
       "Chime",
       "Harp",
       "Horn",

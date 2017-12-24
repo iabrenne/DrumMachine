@@ -3,6 +3,11 @@
   width: 98vw;
   display: grid;
   grid-template-areas: 'button1 button2 button3 display display display' 'button4 button5 button6 button7 button8 button9';
+  grid-gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   max-width: 800px;
   margin: auto;
   height: 99vh;
@@ -11,7 +16,7 @@
     background-color: grey; }
   #drum-machine #Bell {
     grid-area: button1; }
-  #drum-machine #Censor {
+  #drum-machine #Sneeze {
     grid-area: button2; }
   #drum-machine #Chime {
     grid-area: button3; }

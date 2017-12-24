@@ -15,18 +15,22 @@ class App extends Component {
   handleClick = (e) => {
 
     this.setState({soundEffect: e.target.id});
-    e.target.children[0].play();
     
+    // Make each clip half a second long by adjusting timeplayed.
+
+    let audio = e.target.children[0];
+    audio.currentTime = audio.duration - 2;
+    audio.play();    
 
   };
 
   
   render() {
     const mp3Sources = [
-      "https://www.soundjay.com/misc/sounds/bell-ringing-01.mp3",
+      "https://www.soundjay.com/misc/sounds/jingle-bell-1.mp3",
       "https://www.soundjay.com/human/sounds/sneezing-1.mp3",
-      "https://www.soundjay.com/misc/sounds/magic-chime-01.mp3",
-      "https://www.soundjay.com/misc/sounds/dream-harp-01.mp3",
+      "https://www.soundjay.com/misc/sounds/whistle-flute-1.mp3",
+      "https://www.soundjay.com/transportation/sounds/car-locked-honk-1.mp3",
       "https://www.soundjay.com/misc/sounds/bulb-horn-02.mp3",
       "https://www.soundjay.com/human/sounds/fart-01.mp3",
       "https://www.soundjay.com/mechanical/sounds/mechanical-clonk-1.mp3",
@@ -37,8 +41,8 @@ class App extends Component {
     const ids = [
       "Bell",
       "Sneeze",
-      "Chime",
-      "Harp",
+      "Flute",
+      "Honk",
       "Horn",
       "Fart",
       "Clonk",

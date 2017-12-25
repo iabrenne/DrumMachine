@@ -21,7 +21,9 @@
       max-height: 667px; } }
   #drum-machine .drum-pad {
     background-color: #b1cbbb;
-    box-shadow: 4px 3px 9px 0px; }
+    box-shadow: 4px 3px 9px 0px;
+    font-family: "Freckle Face", cursive;
+    font-size: large; }
   #drum-machine #Bell {
     grid-area: button1; }
   #drum-machine #Sneeze {
@@ -41,6 +43,7 @@
   #drum-machine #Slide {
     grid-area: button9; }
   #drum-machine #display {
+    font-family: "Freckle Face", cursive;
     grid-area: display;
     text-align: center;
     font-weight: bolder;

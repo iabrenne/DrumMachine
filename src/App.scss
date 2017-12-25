@@ -5,6 +5,8 @@ $main-padding-vertical: 20px;
 $max-width: 667px;
 $max-height: 290px;
 $size-break:320px;
+$font-family: 'Freckle Face', cursive;
+
 
 
 #drum-machine{
@@ -44,7 +46,9 @@ $size-break:320px;
 
     .drum-pad{
         background-color:#b1cbbb;  
-        box-shadow: 4px 3px 9px 0px;   
+        box-shadow: 4px 3px 9px 0px; 
+        font-family: $font-family;  
+        font-size: large;
     }
 
     #Bell{
@@ -86,6 +90,7 @@ $size-break:320px;
     }
 
     #display{
+        font-family:$font-family;
         grid-area:display;
         text-align: center;
         font-weight: bolder;

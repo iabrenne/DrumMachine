@@ -2,25 +2,44 @@ $primary-color:   #eea29a;
 $accent-color : #b1cbbb;
 $main-padding-horzontal: 10px;
 $main-padding-vertical: 20px;
-
+$max-width: 667px;
+$max-height: 290px;
+$size-break:320px;
 
 
 #drum-machine{
     background-color: $primary-color;
-    width:98vw;
+
     display:grid;
     grid-template-areas:
         'button1 button2 button3 display display display'
         'button4 button5 button6 button7 button8 button9';
+
+        @media (orientation: portrait){
+
+            grid-template-areas:
+            'display display display'
+            'button1 button2 button3'
+            'button4 button5 button6'
+            'button7 button8 button9';
+        }
+
     grid-gap:20px;
     padding-left:$main-padding-horzontal;
     padding-right:$main-padding-horzontal;
     padding-top:$main-padding-vertical;
     padding-bottom:$main-padding-vertical;
-    max-width: 800px;
     margin:auto;
-    height:99vh;
-    max-height:300px;
+    width:95vw;
+    height:95vh;
+    max-width:$max-width;
+    max-height:$max-height;
+
+    @media  (orientation: portrait) {
+        max-width:$max-height;
+        max-height:$max-width;    
+    }
+        
    
 
     .drum-pad{
@@ -74,5 +93,13 @@ $main-padding-vertical: 20px;
         position: relative;
         top: 50%;
         transform: translateY(-60%);
+
+        @media (orientation: portrait) {
+          
+            top:25%;
+      
+        }
+    
+        
     }
   }

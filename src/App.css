@@ -1,6 +1,5 @@
 #drum-machine {
   background-color: #eea29a;
-  width: 98vw;
   display: grid;
   grid-template-areas: 'button1 button2 button3 display display display' 'button4 button5 button6 button7 button8 button9';
   grid-gap: 20px;
@@ -8,10 +7,18 @@
   padding-right: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
-  max-width: 800px;
   margin: auto;
-  height: 99vh;
-  max-height: 300px; }
+  width: 95vw;
+  height: 95vh;
+  max-width: 667px;
+  max-height: 290px; }
+  @media (orientation: portrait) {
+    #drum-machine {
+      grid-template-areas: 'display display display' 'button1 button2 button3' 'button4 button5 button6' 'button7 button8 button9'; } }
+  @media (orientation: portrait) {
+    #drum-machine {
+      max-width: 290px;
+      max-height: 667px; } }
   #drum-machine .drum-pad {
     background-color: #b1cbbb;
     box-shadow: 4px 3px 9px 0px; }
@@ -41,3 +48,6 @@
     position: relative;
     top: 50%;
     transform: translateY(-60%); }
+    @media (orientation: portrait) {
+      #drum-machine #display {
+        top: 25%; } }
